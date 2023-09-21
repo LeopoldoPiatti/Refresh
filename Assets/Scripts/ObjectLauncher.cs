@@ -11,10 +11,6 @@ public class ObjectLauncher : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             GameObject instance = Instantiate(prefab, transform.position + transform.forward * positionOffset, transform.rotation);
-            Destroy(instance, 5);
         }
-
-       
-
     }
 }
