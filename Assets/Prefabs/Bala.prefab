@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4879298040546540793}
   - component: {fileID: 92785574414289953}
   - component: {fileID: 5255360729792117698}
-  - component: {fileID: 150294050415613141}
   m_Layer: 0
   m_Name: Bala
   m_TagString: Bala
@@ -149,17 +148,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 30
   lifetime: 5
---- !u!114 &150294050415613141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8767287740487746952}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ed7c577313ae654eb1f893456568948, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetPrefab: {fileID: 2066325753346609572, guid: dfd0a85378b7dab408d8bb35a73d2566, type: 3}
-  despawnTime: 3

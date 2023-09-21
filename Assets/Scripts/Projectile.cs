@@ -16,7 +16,7 @@ public class Projectile : MonoBehaviour
         rb.AddForce(transform.forward * force, ForceMode.Impulse);
 
         // Destruye el objeto después del tiempo especificado por 'lifetime'
-        Destroy(gameObject, lifetime);
+        Destroy(gameObject, lifetime); 
     }
 }
 
