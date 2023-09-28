@@ -12,10 +12,10 @@ public class CuerpoTorMov : MonoBehaviour
         // Obtén el movimiento del ratón del eje X
         float mouseX = Input.GetAxis("Mouse X");
 
-        // Calcula la rotación de la cuerpo
+        // Calcula la rotación del cuerpo
         Quaternion cuerpoRotation = Quaternion.Euler(0f, mouseX * cuerpoRotationSpeed, 0f);
 
-        // Aplica la rotación a la cuerpo
+        // Aplica la rotación al cuerpo
         Quaternion newRotation = transform.rotation * cuerpoRotation;
 
         transform.rotation = newRotation;

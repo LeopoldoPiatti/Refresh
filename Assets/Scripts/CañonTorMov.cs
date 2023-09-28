@@ -5,13 +5,8 @@ using UnityEngine;
 public class CañonTorMov : MonoBehaviour
 {
     public Transform torso;
-    public Transform boquilla;
     public float cañonRotationSpeed = 5f;
-
-    private void Start()
-    {
-        
-    }
+       
     void Update()
     {
 
@@ -26,8 +21,5 @@ public class CañonTorMov : MonoBehaviour
 
         // Aplica la nueva rotación del torso
         torso.localEulerAngles = new Vector3(newTorsoRotationX, currentTorsoRotation.y, currentTorsoRotation.z);
-
-        // La boquilla se moverá con el torso
-        boquilla.rotation = torso.rotation;
     }
 }

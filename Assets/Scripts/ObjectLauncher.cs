@@ -5,12 +5,11 @@ using UnityEngine;
 public class ObjectLauncher : MonoBehaviour
 {
     public GameObject prefab;
-    public float positionOffset = 2;
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKeyDown("space"))
         {
-            GameObject instance = Instantiate(prefab, transform.position + transform.forward * positionOffset, transform.rotation);
+            Instantiate(prefab, transform.position, transform.rotation);
         }
     }
 }
