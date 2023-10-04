@@ -6,11 +6,11 @@ using TMPro;
 
 public class UiManager : MonoBehaviour
 {
-    public static int scoreValue;
+    public static int scoreTotal;
     public TextMeshProUGUI score;
       
     void Update()
     {
-        score.text = scoreValue.ToString();
+        score.text = scoreTotal.ToString();
     }
 }

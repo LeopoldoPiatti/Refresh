@@ -5,13 +5,8 @@ public class TargetController : MonoBehaviour
     public GameObject brokenTargetPrefab;  // Prefab del target roto
     public float hideTime = 3f;  // Tiempo antes de ocultar el target
 
-    public int scoreValuePlus;
-    
-    private void Start()
-    {
-        
-    }
-
+    public int scoreValue;
+  
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Bala"))
@@ -20,7 +15,7 @@ public class TargetController : MonoBehaviour
             HideTarget();
                        
             //Agregar 100 puntos
-            UiManager.scoreValue += scoreValuePlus;
+            UiManager.scoreTotal += scoreValue;
 
             // Spawnear el target roto en la misma posición
             Instantiate(brokenTargetPrefab, transform.position, Quaternion.identity);
